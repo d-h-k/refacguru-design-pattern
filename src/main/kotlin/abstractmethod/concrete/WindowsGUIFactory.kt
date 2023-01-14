@@ -5,7 +5,7 @@ import abstractmethod.component.Button
 import abstractmethod.component.Checkbox
 import abstractmethod.component.Menubar
 
-class MacGUIFactory :GUIFactory{
+class WindowsGUIFactory:GUIFactory {
     override fun createButton(): Button {
         TODO("Not yet implemented")
     }
