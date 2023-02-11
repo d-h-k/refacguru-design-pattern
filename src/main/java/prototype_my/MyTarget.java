@@ -8,6 +8,7 @@ public class MyTarget implements Cloneable{
         this.filed1 = filed1;
     }
 
+    // 인텔리제이가 생성해주는 clone() 인데 타입을 Object 쓰지말고 꼭 구체클래스로 다운캐스팅 해라
     //    @Override
 //    protected Object clone() throws CloneNotSupportedException {
 //        return super.clone();
