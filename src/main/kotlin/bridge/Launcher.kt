@@ -3,13 +3,14 @@ package bridge
 import bridge.abs.RemoteDevice
 import bridge.abs.TvDevice
 import bridge.impl.AdvencedRemoteDeviceImpl
+import bridge.impl.Lcd4KTvDeviceImpl
 import bridge.impl.OledTvDeviceImpl
 
 class Launcher {
     fun main() {
         val myRemoCon: RemoteDevice = AdvencedRemoteDeviceImpl()
         val myTv: TvDevice = OledTvDeviceImpl()
-
+        val wallTv:TvDevice = Lcd4KTvDeviceImpl();
         myTv.getDisplayRatio()
         myRemoCon.volumeUp()
     }
