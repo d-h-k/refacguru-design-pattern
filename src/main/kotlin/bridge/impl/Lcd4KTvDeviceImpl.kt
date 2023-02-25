@@ -2,7 +2,7 @@ package bridge.impl
 
 import bridge.abs.TvDevice
 
-class Lcd4KTvDeviceImpl:TvDevice {
+class Lcd4KTvDeviceImpl: TvDevice() {
     override fun isEnabled(): Boolean {
         TODO("Not yet implemented")
     }

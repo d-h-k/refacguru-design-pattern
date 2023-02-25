@@ -1,8 +1,8 @@
 package bridge.abs
 
-interface TvDevice: Device {
-    fun analogBroadcastCompatibility();
-    fun digitalBroadcastCompatibility();
-    fun getResolution();
-    fun getDisplayRatio();
+abstract class TvDevice: Device {
+    abstract fun analogBroadcastCompatibility();
+    abstract fun digitalBroadcastCompatibility();
+    abstract fun getResolution();
+    abstract fun getDisplayRatio();
 }

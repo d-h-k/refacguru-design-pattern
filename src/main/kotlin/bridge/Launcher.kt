@@ -1,18 +1,22 @@
 package bridge
 
-import bridge.abs.RemoteDevice
+import bridge.abs.RemoteControl
 import bridge.abs.TvDevice
-import bridge.impl.AdvencedRemoteDeviceImpl
+import bridge.impl.AdvencedRemoteImplControl
 import bridge.impl.Lcd4KTvDeviceImpl
 import bridge.impl.OledTvDeviceImpl
 
 class Launcher {
     fun main() {
-        val myRemoCon: RemoteDevice = AdvencedRemoteDeviceImpl()
+        val myRemoCon: RemoteControl = AdvencedRemoteImplControl()
         val myTv: TvDevice = OledTvDeviceImpl()
         val wallTv:TvDevice = Lcd4KTvDeviceImpl();
         myTv.getDisplayRatio()
         myRemoCon.volumeUp()
+    }
+
+    private fun AdvencedRemoteImplControl(): RemoteControl {
+
     }
 }
 
@@ -36,4 +40,12 @@ val studyNote: String =
 - 개별계층으로 나눠서 추상화하고
 - 독립적으로 구현하자
 
+
+[생각]
+- 변수보다 함수가 중요하다. 함수로만 인터페이스(의사소통) 해야한다
+
+
+
 """.trimIndent()
+
+// @todo : 정리필요
