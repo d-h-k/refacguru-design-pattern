@@ -1,0 +1,6 @@
+package adaptor
+
+class Adaptor {
+
+
+}
